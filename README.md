@@ -1,1 +1,3 @@
 # toDoApp
+
+aplikācija, kas seko

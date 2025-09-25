@@ -1,0 +1,99 @@
+
+
+
+body {
+    background-color: rgb(173, 208, 209);
+}
+
+/* ------------------------ */
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 1vh;
+    
+    border: 2.5px solid;
+    align-content: center ;
+    align-items: center;
+    
+}
+
+header > p {
+    font-size: 5vh;
+    flex-shrink: initial;
+}
+
+header > button {
+    display: flex;
+    flex-wrap: wrap;
+
+    border: none;
+    background-color: rgb(141, 171, 172);
+    font-size: 5vh
+}
+
+header > button:hover {
+    background-color: rgb(99, 120, 121);
+}
+
+header > button:active {
+    background-color: green;
+}
+
+/* ------------------------ */
+
+main {
+    display: inline-block;
+    position: relative;
+    max-width: 90%;
+    margin-left: 1%;
+}
+
+main > h1 {
+    font-size: 8vh;
+}
+main > p {
+    font-size: 5vh;
+}
+
+/* ------------------------ */
+
+aside {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+
+    float: left;
+    border: 2.5px solid;
+    height: 200vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 7%;
+    overflow: hidden;
+    
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: center;
+
+    margin-top: 5px;
+    width: 100%;
+    border: 2.5px solid;
+    font-size: 3vh;
+}
+
+
+@media (max-width: 600px) { 
+    header {
+        flex-direction: column;
+    }
+
+    aside {
+        visibility: hidden;
+    }
+    
+}
