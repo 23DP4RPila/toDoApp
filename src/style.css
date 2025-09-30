@@ -1,31 +1,36 @@
 
 
+* { overflow-x: hidden; }
 
 body {
     background-color: rgb(173, 208, 209);
 }
 
+
+
 /* ------------------------ */
+
+
 
 header {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+
+
     padding: 1vh;
-    
-    border: 2.5px solid;
+    min-width: 95%;
+    border-bottom: 0.2rem solid;
     align-content: center ;
     align-items: center;
-    
 }
 
 header > p {
-    font-size: 5vh;
+    font-size: 2.5rem;
     flex-shrink: initial;
 }
 
 header > button {
-    display: flex;
     flex-wrap: wrap;
 
     border: none;
@@ -41,39 +46,48 @@ header > button:active {
     background-color: green;
 }
 
+
+
 /* ------------------------ */
+
+
 
 main {
     display: inline-block;
     position: relative;
-    max-width: 90%;
     margin-left: 1%;
+
 }
 
 main > h1 {
-    font-size: 8vh;
+    font-size: 5rem;
 }
 main > p {
-    font-size: 5vh;
+    font-size: 2.5rem;
 }
 
+
+
 /* ------------------------ */
+
+
 
 aside {
     display: flex;
     align-items: flex-end;
-    flex-wrap: wrap;
-
-
-    float: left;
-    border: 2.5px solid;
-    height: 200vh;
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: 7%;
+
     overflow: hidden;
+    float: left;
+
+
+    border: 2.5px solid;
+    height: 200vh;
+    max-width: 1%;
     
 }
+
 
 footer {
     display: flex;
@@ -83,11 +97,11 @@ footer {
     margin-top: 5px;
     width: 100%;
     border: 2.5px solid;
-    font-size: 3vh;
+    font-size: 16px 1rem;
 }
 
 
-@media (max-width: 600px) { 
+@media (max-width: 650px) { 
     header {
         flex-direction: column;
     }
@@ -95,5 +109,4 @@ footer {
     aside {
         visibility: hidden;
     }
-    
 }
