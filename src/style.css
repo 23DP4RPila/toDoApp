@@ -4,9 +4,33 @@
 
 body {
     background-color: rgb(173, 208, 209);
+    max-width: 100%;
 }
 
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
+    min-width: 15%;
+    height: 10rem;
+    max-width: 20%;
+
+    border: 1px solid;
+    padding: 0.5rem;
+
+}
+
+.card > p {
+    flex-direction: column;
+
+}
+
+.card:hover {
+    transform: translateY(-2.5px);
+    transition: all 0.1s;
+    
+}
 
 
 /* ------------------------ */
@@ -24,6 +48,11 @@ header {
     border-bottom: 0.2rem solid;
     align-content: center ;
     align-items: center;
+    
+}
+
+header:hover {
+    transition: margin-right 2s;
 }
 
 header > p {
@@ -40,11 +69,14 @@ header > a {
     font-size: 5vh
 }
 
-header > button:hover {
+header > a:hover {
     background-color: rgb(99, 120, 121);
+    transform: translateY(-5px);
+    transition: all 0.1s;
+    
 }
 
-header > button:active {
+header > a:active {
     background-color: green;
 }
 
@@ -58,6 +90,7 @@ main {
     display: inline-block;
     position: relative;
     margin-left: 1%;
+    max-width: 90%;
 
 }
 
@@ -66,6 +99,8 @@ main > h1 {
 }
 main > p {
     font-size: 2.5rem;
+    max-width: 100%;
+    overflow: visible;
 }
 
 
@@ -86,7 +121,7 @@ aside {
 
     border: 2.5px solid;
     height: 200vh;
-    max-width: 1%;
+    max-width: 5%;
     
 }
 
