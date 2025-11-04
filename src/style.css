@@ -1,12 +1,11 @@
 
 
 * { 
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 body {
     background-color: rgb(173, 208, 209);
-    
 }
 
 .card {
@@ -18,7 +17,7 @@ body {
 
     min-width: 15%;
     
-    max-width: 20%;
+    max-width: 30%;
 
     border: 1px solid;
     padding: 0.5rem;
@@ -30,16 +29,16 @@ body {
 
 .card > img {
     padding: 1rem;
-    width: 90%;
+    width: 100%;
 }
 
 .card > p {
     flex-direction: column;
     overflow: hidden;
-    
+
 
 }
-
+                                                                                
 .card:hover {
     transform: translateY(-5px);
     transition: all 0.1s;
@@ -113,19 +112,19 @@ main {
 }
 
 main > div {
-    flex-grow: 1;
     max-width: 5%;
     margin: 1rem;
 
 }
 
 main > h1 {
-    font-size: 5rem;
-    flex-basis: 100%;
-    
+    width: max-content;
+    font-size: 2.25rem;
+    flex-basis: 90%;    
 }
+
 main > p {
-    font-size: 2.5rem;
+    font-size: 1.125rem;
     overflow: visible;
     flex-direction: row;
 }
@@ -140,17 +139,16 @@ aside {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    flex-wrap: wrap;
-    flex-shrink: shrink ;
+   
 
     overflow: hidden;
     float: left;
 
 
     border: 2.5px solid;
-    height: 100rem;
-    max-width: 5%;
-    
+    height: min-content;
+    max-width: min-content;
+    height: 200%;
 }
 
 
@@ -158,6 +156,7 @@ footer {
     display: flex;
     justify-content: flex-end;
     justify-content: center;
+    align-items: flex-end;
 
     margin-top: 5px;
     width: 100%;
@@ -173,6 +172,10 @@ footer {
 
     aside {
         visibility: hidden;
+    }
+
+    .card {
+        max-width: 80%;
     }
 
 
