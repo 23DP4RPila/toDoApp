@@ -1,9 +1,11 @@
 
 function toggleAside() {
-    let aside = document.getElementsByTagName("aside")
-        if (aside.style.display === "flex") {
-            aside.style.display = "block";
-        } else {
-            aside.style.display = "none";
-        }
-}
+    let aside = document.getElementsByTagName("img")
+        while (true) {
+            x = document.getElementsByTagName("aside")
+            if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+        } }

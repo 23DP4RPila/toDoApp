@@ -49,10 +49,9 @@ body {
 /* ------------------------ */
 
 
-
 header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
 
 
@@ -64,9 +63,23 @@ header {
     
 }
 
-header:hover {
-    transition: margin-right 2s;
+header > img {
+    scale: 70%;
+    float: left;
+    background-color: rgb(141, 171, 172);
 }
+
+header > img:hover {
+    background-color: rgb(120, 120, 120);
+    transform: translateY(-5px);
+    transition: all 0.1s;
+    
+}
+
+header > img:active {
+    background-color: green;
+}
+
 
 header > p {
     font-size: 2.5rem;
@@ -83,7 +96,7 @@ header > a {
 }
 
 header > a:hover {
-    background-color: rgb(99, 120, 121);
+    background-color: rgb(120, 120, 120);
     transform: translateY(-5px);
     transition: all 0.1s;
     
@@ -149,6 +162,8 @@ aside {
     height: min-content;
     max-width: min-content;
     height: 200%;
+
+    visibility: hidden;
 }
 
 
@@ -177,7 +192,5 @@ footer {
     .card {
         max-width: 80%;
     }
-
-
 
 }
