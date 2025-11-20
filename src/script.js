@@ -1,11 +1,12 @@
+function toggle(){
+  let menuButton = document.getElementsByClassName("toggleableMenu")
 
-function toggleAside() {
-    let aside = document.getElementsByTagName("img")
-        while (true) {
-            x = document.getElementsByTagName("aside")
-            if (x.style.display === "none") {
-                x.style.display = "block";
-              } else {
-                x.style.display = "none";
-              }
-        } }
+  menuButton.setProperty("visibility", "hidden")
+  
+}
+
+
+document.onclick= function(toggle) {
+  toggle()
+  alert('YOU clicked on SOMETHING');
+};
